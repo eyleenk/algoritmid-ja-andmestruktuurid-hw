@@ -1,0 +1,3 @@
+Koodi selgitused lisatud koodifaili. Kasutatud FIFO (First In First Out) järjekorda.
+Sisestamise ja kustutamise ajaline keerukus: testimiseks kasutatud https://www.timecomplexity.ai lehekülge, mis
+tõi vasteks, et ajaline keerukus on O(1), mis võiks tähendada seda, et protsess läbitakse püsiva aja jooksul, on konstantne. O(1) keerukusega kustutatakse ja sisestatakse elemente kas listi algusesse või lõppu. Minu koodi puhul  lisatakse elemendid järjekorra lõppu ja eemaldatakse järjekorra algusest, mis on ka FIFO põhimõtteks. O(1) keerukusega koodid ei sisalda loop'e ega kordusi. Koodi toimimine ei olene liikmete arvust.

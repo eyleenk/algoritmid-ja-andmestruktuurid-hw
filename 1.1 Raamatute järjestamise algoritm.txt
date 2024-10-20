@@ -1,0 +1,10 @@
+Eesmärk: Luua raamatute järjestamise algoritm, mis kirjeldab raamatute sorteerimise samme raamatute pikkuse põhjal.
+Etapid:
+1) Raamatute nimekirja loomine, leida raamatute arv (a).
+2) Luua indeks (i) raamatute loendamiseks. Indeksi (i) algväärtustamine nulliga - võtab nimekirjast esimese raamatu.
+3) Kui käesoleva raamatu (i) väärtus on suurem kui järgneva (i+1), siis vahetada kohad nii, et lühem oleks eespool.
+4) Suurendada i väärtust ühe võrra.
+5) Korrata samme, kuni raamatud on õiges järjekorras ehk i=a-1.
+6) Protsess lõppeks, kuni enam ühtegi vahetust ei toimunud, ehk kõik on õiges järjekorras.
+Saaks kasutada bubblesorti.
+

@@ -1,0 +1,5 @@
+Funktsioon otsib sorteeritud listist vajalikku elementi (a) ja tagastab selle indeksi.  List jagatud vasakuks ja 
+paremaks pooleks. Vasak algväärtustatud nulliga, kuna sealt algab otsing. Parem len -1 kuna loendus algab nullist
+mitte ühest. Siis leiab programm keskmise väärtuse liites vasak ja parem pool kokku ja jagades kahega. Kui element
+ongi keskmine element, esitatakse see vastusena, kui element on väiksem, kui keskmine element, otsitakse vasakult poolt listist, kui aga suurem, siis paremalt poolt listist. Lisatud ka laused juhtumi kohta, kui ei esitata otsinguelemendiks täisarvu või kui otsitavat listist ei leitud.
+Tegu O(log n) keerukusega, kuna binaarne otsing, mis eeldab listi kaheks jagamist ja seetõttu iga sammuga väheneb otsinguala poole võrra.

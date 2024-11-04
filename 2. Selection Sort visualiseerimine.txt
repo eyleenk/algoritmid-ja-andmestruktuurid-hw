@@ -1,0 +1,18 @@
+Loend:[29, 15, 56, 77, 18]
+Esimene element listis on 29.
+Leida väikseim element listis, milleks on 15.
+Vahetada kohad esimese ja väikseima vahel. Vahetab 29 ja 15.
+Loend hetkeseisuga: [15, 29, 56, 77, 18].
+Kuna esimene ja teine positsioon on juba läbi käidud, käib list sealt edasi, ehk võtab ülejäänud listist väikseima elemendi, ehk 18.
+Vahetab 29 ja 18 kohad.
+List nüüd [15, 18, 56, 77, 29].
+Järgmine hetkepositsioon on 56.
+Väikseim element sortimata listis on 29.
+Vahetab 56 ja 29 kohad.
+Uus list on [15, 18, 29, 77, 56] . 
+Hetkepositsioon 77.
+Väikseim element 77 ja 56 vahel on 56.
+Vahetab nende kohad.
+List: [15, 18, 29, 56, 77].
+
+ 

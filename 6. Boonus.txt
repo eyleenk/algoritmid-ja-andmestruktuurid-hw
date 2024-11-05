@@ -1,0 +1,4 @@
+Loend [8,3,5,4,7,6,2] välja peale esimest läbimist järgnev:
+a) Bubble Sort puhul [3,5,4,7,6,2,8]
+b) Selection Sort puhul [2,3,5,4,7,6,8]
+c) Insertion Sort puhul [3,8,5,4,7,6,2]

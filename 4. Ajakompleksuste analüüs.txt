@@ -1,0 +1,5 @@
+a) Kõigil kolmel on ajakomplektsus O(n^2), kuna sortimine toimib samm sammult.
+Bubble sort puhul võib halvimal juhul teha läbimise kõigi listi liikmetega.
+Selection sort puhul tuleb samuti halvimal juhul läbi käia kogu loend, ehk siis, kui loend on vastupidises järjekorras. Selection sorti ainuke võimalik ajakompleksus ongi O(n^2).
+Insertion sort ajakompleksus samuti O(n^2), kuna samuti võib juhtuda, et loend on vastupidises järjekorras ning siis tuleb nihutada kõik listi liikmed.
+b) Counting sort, kuna toimib kiiremini, kui võrdlevad algoritmid. Selle ajaline keerukus on O(n+k), kus n on loendi pikkus ja kui on teada k ehk suurim element, on meetod stabiilne ja tõhus. Kasutab sorteerimiseks sagedustabelit. 

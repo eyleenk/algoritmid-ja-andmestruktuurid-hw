@@ -1,0 +1,20 @@
+1. Kirjutage lühike ülevaade Jump Search algoritmist, sealhulgas selle põhiprintsiibid ja pseudo-koodi näide.
+- Algoritm, mis sisaldab binaarotsingu ja lineaarotsingu omadusi.
+- Andmed peavad olema sorteeritud.
+- Otsing toimub "hüppe" kaupa.
+- Kui leitakse vahemik, kus otsitav arv võib asuda, kasutatakse edasi lineaarotsingut.
+
+Pseudokood:
+On list näiteks, (1, 1, 2, 3, 4, 4, 5) - listi elementide arv on 7.
+Otsides liiget 3 arvutatakse ruutjuur liikmete arvust ehk ruutjuur 7=2. Hüpatakse kaheste sammudega.
+Kontrollime, kas teine element on väiksem, kui otsitav element, kui ei, siis hüpatakse edasi kahe sammu võrra (1<3).
+Kontrollime, kas neljas element on otsitav väärtus, kui pole, siis hüpatakse edasi kahe sammu võrra (2<3).
+Kontrollime, kas kuues element (4 - listis viiendal kohal) on väiksem, kui otsitav väärtus 3. Kuna on suurem, siis tuleb minna tagasi ja järjest otsida läbi 3 ja 4. Leitakse esimesena kolm ja otsing on lõppenud.
+
+2. Võrrelge Jump Search'i ajalist komplekssust Linear Search'i ja Binary Search'iga.
+- Lineaarotsingul parimal juhul O(1), halvimal O(n).
+- Binaarotsingul parimal juhul O(1), halvimal O(log n).
+- Jump Search parimal juhul O(1), halvimal O(ruutjuur n).
+
+3. Arutlege lühidalt stsenaariumide üle, kus Jump Search võib olla efektiivsem võrreldes Linear Search'i ja Binary Search'iga.
+- Suuremates ja sorteeritud massiivides on Jump Search kiirem, kasutab vähem mälu võrreldes binaarotsingu ja lineaarotsinguga. 

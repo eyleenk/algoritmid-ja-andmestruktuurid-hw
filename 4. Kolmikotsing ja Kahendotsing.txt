@@ -1,0 +1,18 @@
+1. Kirjutage lühike ülevaade Ternary Search algoritmist, sealhulgas selle põhiprintsiibid ja pseudo-koodi näide.
+- Otsib väärtust sorteeritud massiivist jaotades selle kolmeks osaks.
+- Võrdleb otsitavat väärtust kahes punktis ning kui ei leia, siis otsib edasi sobivamast jaotusest.
+
+Pseudokood
+Jagab listi kolmeks osaks (nt vasak, keskmine, parem)
+Leiab kaks keskmist punkti
+Kui otsitav on kahe punkti vahel, otsib sealt ja tagastab väärtuse.
+Kui väärtus on suurem, kui keskmised punktid, otsib paremalt.
+Kui väärtus on väiksem, kui keskmised punktid, otsib vasakult.
+
+2. Võrrelge Ternary Search'i ja Binary Search'i aegkomplekssust. (Kas mõõdetud tulemus, teoreetiline võrdlus, vms)
+- Binaarotsingul O(log n)
+- Kolmikotsingul O(log₃ n) - ajakeerukus suurem, teeb rohkem tööd võrreldes binaarotsinguga, kuna peab leidma rohkem punkte.
+
+3. Arutlege lühidalt, kas Binary Search on üldiselt tõhusam kui Ternary Search ning millistes olukordades.
+- Kolmikotsingut kasulik kasutada sorteeritud suuremate listide puhul. Nende puhul on otsinguaeg lühike. 
+Üldiselt on universaalsem ja efektiivsem kasutada binaarotsingut, kuna kolmikotsing (log3) teeb võrreldes binaarotsinguga(log2) rohkem samme/võrdlusi. Kolmikotsingu puhul vähendatakse otsingupiirkonda ainult kolme võrra, samal ajal, kui binaarotsinguga väheneb otsingupiirkond poole võrra.

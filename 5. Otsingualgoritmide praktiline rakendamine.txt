@@ -1,0 +1,9 @@
+Valitud probleem: Sõna otsimine sõnaraamatust.
+Kirjeldage, milline otsingualgoritm oleks kõige tõhusam ja miks.
+- Binaarotsinguga. Positiivne, et sõnaraamatus on kõik sõnad tähestikulises järjekorras, mis on binaarotsingu eelduseks. Kasutaksin binaarotsingut, kuna tundus eelnevalt kogutud info põhjal kõige kiirema ja tõhusamana. Selle ajaline keerukus on O(log n), mis tähendab, et kui sisendi hulk kahekordistub, siis ajaline mahukus suureneb ainult ühe ühiku võrra.
+
+Arutage ka potentsiaalseid modifikatsioone, mis võiksid algoritmi teie valitud rakenduse jaoks optimeerida. Pidage meeles, et tuleb arvestada andmete omadusi, nagu suurus, struktuur ja uuendamise sagedus.
+- Peaks olema võimalus otsida ka silpe terviklikest sõnadest, ehk peaks võtma arvesse sõna pikkust ja siis tagastama kõik sõnad, mis koosnevad sisestatud silbist.
+- Kuna sõnaraamatusse tuleb uusi sõnu harva, siis binaarotsing võiks olla hea algoritm sõnade leidmise jaoks.
+- Võiks kasutada eelindekseerimist, ehk siis sorteeritud loendit, kus pole KÕIK sõnad, aga sõnadele antud mingid väärtused, et oleks kergem ja kiirem leida konkreetset sõna. Sellisel juhul aga pole kindel, kas saaks otsida sõnu silpide haaval?
+

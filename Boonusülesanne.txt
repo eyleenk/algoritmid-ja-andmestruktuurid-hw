@@ -1,0 +1,7 @@
+Kirjeldage lühidalt Fibonacci Search algoritmi ja selgitage, kuidas seda saab kasutada suuremahuliste andmete sorteeritud massiivides. 
+- Fibonacci Search on otsingupõhine algoritm, mis kasutab elemendi leidmiseks sorteeritud massiivist Fibonacci jada. On efektiivne just suurte massiivide puhul, mis ei mahu ära vahemällu või massiivide puhul, asuvad teises asukohas, kui programm ise (nt kõvakettad jms. välised seadmed). Fibonacci search jagab massivi vastavalt fibonacci jada arvudele, nt on Fibonacci arvud 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 jne. Keerukus O(log n). 
+
+Töötage välja konkreetne stsenaarium, kus Fibonacci Search oleks efektiivsem kui teised otsingualgoritmid, näiteks Binary Search või Ternary Search. Selgitage, miks valitud stsenaariumis on Fibonacci Search parem valik, arvestades andmestruktuuri omadusi ja otsinguvajadusi.
+-
+Näiteks kui oleks vaja sorteeritud sõnastikust otsida erinevate pikkusega sõnu. Kui otsida konkreetset sõna, siis Binaarotsing jagab listi pooleks ja teeb seetõttu palju võrdlusi. Fibonacci otsing on võimeline kohandama sammude suurust ja võib leida lahenduse kiiremini. Fibonacci otsing on tõhusam siis, kui sõnade erinevus üksteisest on suur (nt sõnade pikkus on erinev või füüsiline kaugus mälus või et need sõnad erinevad tähestikuliselt üksteiset märkimisväärselt, nt zorro ja aabits). Fibonacci otsingut võib kasutada ka osaliselt sorteeritud andmete puhul ning sellega annab see eelise selliste otsingualgoritmide puhul nagu Binary Search või Ternary Search.
+

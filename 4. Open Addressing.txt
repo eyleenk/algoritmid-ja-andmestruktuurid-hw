@@ -1,0 +1,12 @@
+1. Kirjuta lühike ülevaade avatud aadressimise meetodist kokkupõrgete lahendamisel räsimises.
+-Open addressing on lisaks separate chaining'ule teine levinud meetod kokkupõrgete vältimiseks räsimises. Avatud adresseerimises salvestatakse kõik elemendid räsitabelisse. Igal hetkel peab tabeli suurus olema suurem kui võtmete koguarv või sellega võrdne. Seda lähenemisviisi nimetatakse ka suletud räsimiseks. 
+
+2. Võrdle (teooria) kolme tehnikat: lineaarne otsing (linear probing), ruuduline otsing (quadratic probing) ja topelträsimine (double hashing).
+-Linear probing: Kui kokkupõrge tekib, otsitakse järjest järgmist saadaval olevat indeksit, liikudes tabelis üks positsioon korraga edasi. On lihtne rakendada. Efektiivne ruumikasutus, kuid võib tekkida primary clustering, kus andme kogunemise tõttu muutuvad otsingud aeglasemaks. Sobib väikestele tabelitele. 
+-Quadratic probing: Kui kokkupõrge tekib, otsitakse saadaval olevat indeksit ruudulise funktsiooni abil, liikudes kaugematele positsioonidele. Primary clustering tekib vähem võrreldes linear probing meetodiga. Võib jääda tsüklisse toppama, kuna kui vaba kohta ei leia, siis jääbki otsima. Keerukam kui linear probing. Sobib keskmistele tabelitele. 
+-Double hashing: Kasutatakse kahte erinevat räsifunktsiooni, millest teine määrab nihke kauguse, et leida uus indeks kokkupõrke korral. Otsingukiiruselt kiireim. On suuteline primary clustering'i teket vältima paremini kui quadratic ja linear probing meetodid. Kuna koosneb kahest ränifunktsioonist, on raskeim implementeerida. Sobib kõrge koormusteguriga tabelite puhul. 
+
+3. Aruta, millistes olukordades iga tehnika oleks kõige efektiivsem.
+-Linear probing: väiksed andmekogumid.
+-Quadratic probing: keskmised andmekogumid. Suure koormuse korral võib jääda tsüklisse.
+-Double hashing: suured ja keerukamad andmekogumid. Keeruline. 

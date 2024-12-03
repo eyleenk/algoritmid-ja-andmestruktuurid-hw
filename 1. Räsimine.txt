@@ -1,0 +1,14 @@
+1. Kirjuta selgitus räsimise (hashing) kontseptsioonist - põhiidee ja eesmärk.
+-Räsimine on protsess, mille käigus luuakse sisendväärtusest mingi tehte abil väljundväärtus kujul näiteks 5df6e0e276135. Väljundit enam uuesti sisendiks tagasi muuta ei saa. Tehakse turvalisuse huvides. 
+
+2. Kirjelda hea räsifunktsiooni omadusi ja selgita, miks need on olulised.
+-Deterministlikkus: Sama sisend annab alati sama räsiväärtuse.
+-Kiirus - Räsifunktsioon peab olema efektiivne, et töötlemine oleks kiire ka suurte andmehulkade korral.
+-Kokkupõrgete vältimine - Erinevad sisendid peaksid andma erinevad räsiväärtused, et vähendada kokkupõrgete esinemist.
+-Vastupidavus muutustele - Räsiväärtus peaks muutuma oluliselt ka väikeste sisendi muudatuste korral.
+-Turvalisus - Räsiväärtust ei tohiks olla võimalik tagasi arvutada sisendandmeteks (ühesuunaline) ja vastandite leidmine peaks olema arvutuslikult keeruline.
+
+3. Selgita kokkupõrgete lahendamise tehnikaid, eriti eraldi aheldamist (separate chaining) ja avatud adresseerimist (open addressing). 
+-Kokkupõrge tähendab seda, kui kaks võtme väärtust langevad samale indeksile räsitabelis. Kuna kokkupõrgete tõenäosus on suur, siis põhilised meetodid nende vältimiseks on:
+-Separate chaining: Kerge kasutada, räsitabel ei saa kunagi täis ja on vähem tundlik räsifunktsioonile või koormustegurile. Põhimõte seisneb selles, et linked listi väärtusi hoitakse seoses nende enda asukohaga räsitabelis kokkupõrke tekkimise ajal.
+-Open addressing: selle tehnika puhul otsib algoritm vaba kohta räsitabelis, kuhu võti salvestada (probing). Vastukaaluks separate chaining tehnikale ei kasuta linked listi. On töömahukam, ehk siis teeb rohkem arvutusi kui separate chaining. Samuti võib tabel saada täis ja on keerukam implementeerida.

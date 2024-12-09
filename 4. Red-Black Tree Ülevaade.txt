@@ -1,0 +1,12 @@
+●Kirjelda punase-musta puu andmestruktuuri ja selle peamisi omadusi.
+-Punase-musta puu (Red-Black Tree) on isetasakaalustuv binaarne otsingupuu (BST), millel on mõned täiendavad omadused ja reeglid, et tagada,  et puu jääb tasakaalu. Selle peamised omadused on:
+1. Iga sõlm on värvitud punaseks või mustaks.
+2. Juur (Root) on alati must.
+3. Kõik lehed (Leaf Nodes) on mustad.
+4. Kui sõlm on punane, siis mõlemad tema lapsed on mustad (punase sõlme reegel).
+5. Iga sõlme puhul on tee juurest leheni sama palju musti sõlmi (mustade sõlmede reegel).
+● Võrdle teoreetiliselt punase-musta puu ja binaarse otsingupuu tõhusust.
+-Binaarne Otsingupuu (BST) - Otsing, sisestamine, kustutamine: Halvimal juhul on O(n)
+-Punase-Musta Puu (RB Puu) - Otsing, sisestamine, kustutamine: Tänu isetasakaalustamisele on RB puu keerukus alati O(log n).
+● Aruta, kuidas punase-musta puu tasakaalustamine ja värvireeglid aitavad kaasa andmestruktuuri tõhususele.
+- Kui lisamine või eemaldamine rikub puu tasakaalu, kasutatakse vasak- või parempöördeid, et sõlmede ümberkorraldamine taastada tasakaal. Kui lisatakse või eemaldatakse sõlm, siis kontrollitakse ja vajadusel korrigeeritakse värvide tasakaalu, et mitte rikkuda punase sõlme reeglit.  Musta sõlme reegel - tagab, et iga tee juurest leheni sisaldab sama arvu musti sõlmi, mis aitab vältida ühte osa puust muutumist oluliselt kõrgemaks teisest. Tänu värvireeglitele jääb punase-musta puu kõrgus alati väiksemaks kui kaks korda logaritmiline puu sõlmede arvust (2*log n) See tagab, et kõik operatsioonid on tõhusad ka suures mahus andmete korral.

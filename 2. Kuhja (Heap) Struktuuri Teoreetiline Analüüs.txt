@@ -1,0 +1,12 @@
+Kirjelda min-kuhja ja max-kuhja struktuuride teoreetilisi omadusi.
+ 1. Min-max kuhu on täielik kahendpuu, mis sisaldab nii paaris kui paaritu astmeid. Paarisastmed n nt (0),2,4,6 ja   paaritud 1,3,5. Iga sõlme väärtus vastab teatud tingimustele.
+ 2. Min-kuhi: Iga sõlme väärtus on väiksem või võrdne selle laste väärtustega. Juur on väikseim element kuhjas.
+ 3. Max-kuhi: Iga sõlme väärtus on suurem või võrdne selle laste väärtustega. Juursõlm sisaldab maksimaalset  väärtust. 
+Analüüsi nende struktuuride aja- ja ruumikomplekssust
+-Lisamisel tuleb kõiki liikmeid liigutada, ehk komplekssus O(log n), kus n on sõlmede arv.
+-Min/max väärtuse leidmisel komplekssus O(1), kuna asub alati kõige esimesel tasandil.
+-Eemaldamisel tuleb sõlme alla liigutada, ehk O(log n).
+-Kuhja loomisel O(n).
+Aruta, kuidas kuhja struktuurid sobivad andmete sorteerimiseks ja prioriteetjärjekordade haldamiseks.
+- Kuhja abil saab andmeid järjestada tõusvas või langevas järjekorras. Seda nim. heap sortiks. Tulöeb kuhi ehitada,  ehk mitte kuhi esialgselt kuhjaks muuta (heapify). Seejärel kuna üleval on alati suurim liige tuleb eemaldada element ülevalt ja asendada kuhja lõppu. Siis korrata protsessi kuni kõik elemendid on sorteeritud. Prioriteetjärjekord on spetsiaalne järjekord, kus igal elemendil on prioriteet ja elemendid eemaldatakse järjekorras nende prioriteedi alusel. Elementide lisamine kuhja toimub O(log n) keerukusega, säilitades kuhja omadused.
+Eemaldamine (remove) - prioriteedijärjekorras kõige kõrgema prioriteediga elemendi eemaldamine toimub samuti O(log n) keerukusega.Tippu vaatamine - Tipu (kõige kõrgema või madalama prioriteediga elemendi) vaatamine on O(1) keerukusega, mis tähendab, et see on väga kiire operatsioon. Kuhjad sobivad ideaalselt olukordadesse, kus on vajalik kiire ligipääs kõrgeima või madalaima prioriteediga elementidele, näiteks ülesannete haldamisel või teekide (queues) korraldamisel.

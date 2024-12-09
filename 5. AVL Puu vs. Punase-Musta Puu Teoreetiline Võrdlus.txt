@@ -1,0 +1,8 @@
+● Kirjelda AVL puu andmestruktuuri ja selle peamisi omadusi.
+-Igal sõlmel AVL (Adelson, Velski ja Landis) puus on kõrgus, mis on määratud kui kõrguste erinevus tema vasaku ja parema alampuu vahel. Iga sõlme kõrguste erinevus (balanss) on vahemikus -1 kuni 1. Balansifaktor = Vasaku alampuu kõrgus - Parema alampuu kõrgus. Kui tasakaalu faktor väljuks sellest vahemikust, viiakse läbi tasakaalustamise operatsioonid, milleks on: 1. Pöörded (Rotations) - Kui lisamine või eemaldamine rikub puu tasakaalu, kasutatakse vasak- ja parempöördeid, et taastada tasakaal. 2. Topeltpöörded  Mõnel juhul on vaja teostada ka topeltpöördeid (vasak-parem või parem-vasak), et säilitada tasakaalu.
+● Võrdle teoreetiliselt AVL puu ja punase-musta puu tõhusust.
+-AVL puhul operatsioonid võtavad aega O(log n), kuna on rangemad tasakaalureeglid, kui punasel/mustal puul. Lisamine/eemaldamine aeglasem, kui P/M puhul.
+-Punase/musta puu puhul otsimine aeglasem, kui AVL puul - 2(log n). Lisamine/eemaldamine kiirem.
+● Analüüsi, millistes rakendustes oleks üks struktuur teisele eelistatav ja põhjenda oma valikuid.
+-AVL puu sobib sellisel puhul, kui on olulisem otsingukiirus nt. andmebaasid, rakendused, tabelid.
+-Punase/musta puu sobib, siis kui vaja stabiilsemat jõudlust ja on vaja tegeleda sagedamini otsingu, lisamise ja kustutamisoperatsioonidega. AVL puu on parem otsingu intensiivsetes rakendustes, samas kui punase-musta puu on parem üldises kasutuses. Kui vaja kasutada lugemisoperatsioone, siis AVL puu, kui kirjutamisoperatsioone, siis punane/must puu.

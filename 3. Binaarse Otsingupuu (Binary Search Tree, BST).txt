@@ -1,0 +1,8 @@
+Kirjelda binaarse otsingupuu (BST) andmestruktuuri ja selle põhielemente.
+-BST on andmestruktuur, mis korraldab andmeid hierarhilisel viisil, pakkudes efektiivseid andmete otsimise, lisamise ja kustutamise operatsioone. BST põhielemendid on:
+-Sõlm (Node) - Iga BST sõlm sisaldab kolme komponenti: 1.Väärtus (Value) - Andmed, mis on sõlmes salvestatud. 2. Vasak laps (Left Child) -Otsingupuu sõlm, mille väärtus on väiksem kui vanemal sõlmel. 3. Parem laps (Right Child) - Otsingupuu sõlm, mille väärtus on suurem kui vanemal sõlmel.
+-Juur (Root) - Puu algussõlm, millest algab kogu puu struktuur.
+-Lehed (Leaves): Sõlmed, millel puuduvad lapsed ehk kõige alumisemad sõlmed puus.
+Arutle, kuidas tasakaalustamata puud mõjutavad BST tõhusust ja kuidas seda saab teoreetiliselt optimeerida.
+- Tasakaalustamata puud halvendavad operatsioonide kiirust ja mõjutavad andmete ebaühtlaselt jaotumist puus.
+Optimeerimiseks kasutatakse mitmeid strateegiaid - Ise-tasakaalustuvad puud (Self-Balancing Trees): Need puud korrigeerivad oma struktuuri pärast igat lisamist või kustutamist, et säilitada tasakaalu. Nt AVL puud ja punane-must puud (Red-Black Trees). Veel kasutatakse tasakaalustavaid operatsioone nagu rotations, et sõlmi ümber korraldada ja saavutada parem tasakaal. Samuti rebalancing ehk puu tasakaalustamine pärast sõlme lisamist või eemaldamist.

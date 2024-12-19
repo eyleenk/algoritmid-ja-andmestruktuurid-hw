@@ -1,0 +1,8 @@
+● Kirjelda Dijkstra algoritmi ja selle kasutamist lühima tee leidmiseks graafides.
+- Dijkstra algoritm on ahne algoritm ja selle ülesanne on leida graafis lühim tee algtipust kõikidesse teistesse tippudesse. 
+1- Määratakse algustipule nullväärtus ja kõigile teistele tippudele lõpmatus ehk et need tipud on veel läbimata.
+2- Igal sammul valitakse läbi vaatamata tippude hulgast tipp, millel on väikseim kaugus algustipust.
+3- Läbi väikseima kaugusega tipu naabrite vaadatakse, kas uued leitud teed läbi selle tipu on lühemad kui seni tuntud teed. Kui on, siis teed uuendatakse.
+● Arutle, millistes olukordades on Dijkstra algoritm eriti efektiivne ja millistes olukordades see võib ebaefektiivne olla.
+-Graafid, kus kõik servad on mitte-negatiivsete kaaludega: Dijkstra algoritm töötab optimaalselt graafides, kus kõik servad on mitte-negatiivsete kaaludega, kuna see põhineb ideel, et lühim tee kasvab samm-sammult ja tihedate graafide puhul, kus enamik tippe on ühendatud: Dijkstra algoritm saab kasutada heap-andmestruktuurides ja ee kiirendab algoritmi tööd. 
+Ei sobi, kui kaalude servad on negatiivsed ja suurte ja hõredate graafide puhul, kuna ei pruugi siis leida lahendust ja on väheefektiivsed.

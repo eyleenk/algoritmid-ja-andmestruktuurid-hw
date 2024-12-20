@@ -1,0 +1,7 @@
+● Kirjelda P vs NP probleemi olemust ja selle tähtsust arvutiteaduses.
+- P= kõik polünoomselt(probleemi lahendamiseks vajaliku aja kasv on seotud sisendi suuruse astmelise kasvuga) lahendatavad probleemid.
+NP= mitte polünoomselt lahendatavad probleemid.
+P=NP on tõene siis, kui kõik probleemid, mille lahendusi saab kontrollida polünomiaalse ajaga, saab ka polünomiaalse ajaga lahendada.
+P≠NP on tõene siis, kui on probleem, mida on küll võimalik kontrollida efektiivselt, kuid nende lahendamine nõuab ülimalt palju arvutusressursse.
+● Arutle, miks on P vs NP probleemi lahendamine oluline ja millised võiksid olla selle lahendamise tagajärjed.
+-Selle lahendamien võimaldaks täpselt mõista, millised probleemid on arvutite poolt lahendatavad ja millised mitte, see tooks kaasa võimaluse lahendada siiani lahendamatuid probleeme. Aitaks kaasa optimeerimisprotsessidele ja ka meditsiinis paljudele küsimustele. Samuti väheneks arvutuste ajakulu. Minu meelest selle probleemi siiani mitte tõestamine näitab, et ei ole universaalset lahendust, kuna kõik oleneb konkreetsetest muutujatest probleemis. Ehk ongi see lahendamatu.

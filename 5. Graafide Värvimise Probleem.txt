@@ -1,0 +1,5 @@
+● Kirjelda graafide värvimise probleemi olemust ja selle tähtsust arvutiteaduses.
+- Seisneb selles, et tipule tuleb määrata värv nii, et naabertipud ei jagaks sama värvi, kuna see aitab vältida konflikte. See probleem on seotud optimeerimise, registrite ja ressursside jaotamisega ja võrgustiku disainiga. Graafide värvimine aitab leida optimaalsemaid (kiiremaid ja vähem ressursse nõudvaid) lahendusi. 
+● Arutle, kuidas graafide värvimist saab kasutada ressursside jaotamise ja konfliktide lahendamise probleemides.
+- Saab kasutada töökoormuse jagamiseks. Näiteks olukordades, kus piiratud ressursse tuleb jagada nii, et ressursikasutus ei kattuks või ei tekiks konflikte. Nt. tipud tähistavad ülesandeid, piirkondi, seadmeid ja servad
+seoseid või konflikte nende üksuste vahel - näiteks sõltuvused või kattuvused nagu näiteks tööajagraafiku tegemine. Graafi värvimine määrab, kuidas ressursse jagada, et konflikte välistada.

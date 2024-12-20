@@ -1,0 +1,7 @@
+●Kirjelda Bellman-Fordi algoritmi ja selle erinevust Dijkstra algoritmist.
+- Kasutatakse samuti lühema tee leidmiseks nagu Dijkstra't. Selle vahega, et Bellman-Ford'i algoritm saab kasutada ka negatiivsete kaaludega servi. Dijkstra algoritm on ajaliselt tõhusam tihedate ja mitte-negatiivsete kaaludega graafide puhul. Bellman-Fordi algoritm on võimsam, kuna suudab töötada ka negatiivsete kaaludega graafide puhul, kuid on ajaliselt nõudlikum. Toimib nii:
+1. Määratakse algustipule nullväärtus ja kõigile teistele tippudele lõpmatus ehk tippe pole veel läbitud.
+2. Korratakse V-1 korda (V= tippude arv graafis). Läbib iga serva (u, v) ja uuendab kauguse väärtusi nii, et kaugus tippu v on minimaalne.
+3. Pärast seda vaatab servad üle ja kui leiab tipu, mille teed saab veel lühendada, teeb seda. 
+● Arutle, kuidas Bellman-Fordi algoritm suudab tuvastada negatiivseid tsükleid graafides ja milline on selle praktiline tähtsus.
+-Pärast 𝑉−1 iteratsiooni, kui algoritm avastab, et mõne tipu kaugust saab endiselt vähendada, tähendab see, et on olemas tsükkel, mille kogukaal on negatiivne. Kasutatakse finantsvaldkondades ja süsteemides, kus on oluline negatiivsete tsüklite tuvastamise olulisus, ehk sellistes, kus tsükkel võibki kestma jääda.
